@@ -24,7 +24,7 @@ msg.attach(msgtext)
 msg.attach(addimg("img/weekly.png","weekly"))
 attach = MIMEText(open("doc/week_report.xlsx","rb").read(),"base64","utf-8")
 attach["Content-Type"] = "application/octet-stream"
-attach["Content-Type"] = "attachment;filename=\"test.xlsx"\"".decode("utf-8").encode("gb18030")
+
 
 msg.attach(attach)
 msg['subject'] = subject
