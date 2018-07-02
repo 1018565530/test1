@@ -137,25 +137,25 @@ data4 = json.dumps(
     "jsonrpc": "2.0",
     "method": "host.create",
     "params": {
-        "host": "Linux server",
+        "host": ip,
         "interfaces": [
             {
                 "type": 1,
                 "main": 1,
                 "useip": 1,
-                "ip": [ip],
+                "ip": ip,
                 "dns": "",
                 "port": "10050"
             }
         ],
         "groups": [
             {
-                "groupid": [groupid]
+                "groupid": groupid
             }
         ],
         "templates": [
             {
-                "templateid": [templateid]
+                "templateid": templateid
             }
         ],
         "proxys":[
