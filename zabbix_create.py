@@ -66,7 +66,8 @@ except URLError as e:
 else:
     response = json.loads(result.read())
     if len(response['result']):
-        templateid = response['result']['templateid']
+	    for templateid in response['result']:
+		templateid = templateid['templateid']
     else:
         sys.exit(1)
 
