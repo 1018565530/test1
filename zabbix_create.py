@@ -161,7 +161,7 @@ data4 = json.dumps(
         ],
         "proxys":[
             {
-                "proxyid":[proxyid]
+                "proxyid":proxyid
             }
         ],
     },
