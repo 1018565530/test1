@@ -143,7 +143,10 @@ class zabbixapi:
             "method": "proxy.get",
             "params":{
                 "output": "extend",
-                "host":self.proxyname
+                "filter":{
+                    "host":self.proxyname
+                }
+                
             },
             "auth":self.auth,
             "id":5
